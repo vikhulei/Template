@@ -3,7 +3,7 @@
 function App() {
   return (
     <>
-<h1>My new project - Enquiries</h1>
+<h1>Template project</h1>
     </>
   )
 }
