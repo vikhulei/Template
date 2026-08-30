@@ -1,54 +1,28 @@
 export const TYPOGRAPHY = {
-
-  /* =========================
-     Font families
-  ========================= */
-
   fontFamily: {
-    // Default font used across the application
-    sans: `
-      Arial,
-      Helvetica,
-      sans-serif
-    `,
+    sans: "'Inter', Arial, Helvetica, sans-serif",
   },
-
-
-  /* =========================
-     Font weights
-  ========================= */
 
   weight: {
     regular: 400,
     medium: 500,
     semibold: 600,
     bold: 700,
+    extrabold: 800,
   },
 
-
-  /* =========================
-     Header typography
-  ========================= */
-
-  header: {
-
-    // Logo / application name
-    logo: {
-      size: "1.8rem",
-      weight: 700,
-    },
-
-    // Home, About, Contacts
-    navLink: {
-      size: "0.9rem",
-      weight: 600,
-    },
-
-    // Login, Sign Up, Exit
-    userMenu: {
-      size: "0.9rem",
-      weight: 400,
-    },
+  size: {
+    xs: "0.75rem",
+    sm: "0.875rem",
+    md: "1rem",
+    lg: "1.125rem",
+    xl: "1.5rem",
+    xxl: "2rem",
+    display: "3.5rem",
   },
 
+  line: {
+    normal: 1.5,
+    tight: 1.2,
+  },
 };
