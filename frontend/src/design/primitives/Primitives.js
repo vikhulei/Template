@@ -1,5 +1,10 @@
 import styled from "styled-components";
+import styled from "styled-components";
 import { SIZES } from "../tokens/Sizes";
+
+const Section = styled.div`
+
+`
 
 const Container = styled.div`
   width: 100%;
@@ -12,4 +17,8 @@ const Container = styled.div`
   }
 `;
 
-export default Container;
+const Stack = styled.div`
+
+`
+
+export {Section, Container, Stack};
