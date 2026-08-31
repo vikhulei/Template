@@ -4,12 +4,12 @@ export const SIZES = {
     tablet: "1024px",
   },
 
-  container: {
-    maxWidth: "1200px",
-  },
-
-  pagePadding: {
-    desktop: "32px",
-    mobile: "16px",
+  spacing: {
+    xs: "8px",
+    sm: "16px",
+    md: "24px",
+    lg: "32px",
+    xl: "48px",
+    xxl: "64px",
   },
 };
