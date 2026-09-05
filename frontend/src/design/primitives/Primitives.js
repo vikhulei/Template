@@ -3,21 +3,17 @@ import { SIZES } from "../tokens/Sizes";
 
 const Section = styled.div`
     width: 100%;
-    padding: 40px 0;
-    @media (max-width: ${SIZES.bp.mobile}) {
-        padding: 20px 0;
-    }
+    padding: 0 20px;
 `
 
 const Container = styled.div`
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 32px;
-
-    @media (max-width: ${SIZES.bp.mobile}) {
-        padding: 0 16px;
-    }
+    height:100%;
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 `;
 
 const Stack = styled.div`

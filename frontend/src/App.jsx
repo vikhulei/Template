@@ -1,11 +1,15 @@
 import GlobalStyles from "./design/global/GlobalStyles";
 import Header from "./components/layout/header/Header";
 
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 function App() {
   return (
     <>
     <GlobalStyles />
-    <Header />
+    <Router>
+      <Header />
+    </Router>
     </>
   )
 }

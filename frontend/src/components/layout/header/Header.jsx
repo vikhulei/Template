@@ -1,16 +1,16 @@
 import { HeaderOuter, HeaderInner, LogoWrapper, LogoImage } from "./Header.styles"
-import logo from "./logo.jpg"
+import Nav from "./navigation/Nav"
+import logo from "./logo.png"
+
 
 const Header = () => {
   return (
     <HeaderOuter>
       <HeaderInner>
-        <LogoWrapper>
+        <LogoWrapper to="#">
           <LogoImage src={logo} />
         </LogoWrapper>
-        <div>
-
-        </div>
+        <Nav />
       </HeaderInner>
     </HeaderOuter>
   )
