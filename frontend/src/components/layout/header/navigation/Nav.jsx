@@ -1,29 +1,43 @@
 import { useState } from "react"
-import { NavWrapper, MenuItem, SignIn, HamburgerButton } from "./Nav.styles.js"
+import { DektopMenu, MenuItem, SignIn, HamburgerButton, MobileMenu } from "./Nav.styles.js"
 import { FaBars } from "react-icons/fa"
 
 function Nav() {
 
+    const MenuItems = [
+        { title: "Home", href: "#" },
+        { title: "How It Works", href: "#" },
+        { title: "Courses", href: "#" },
+        { title: "Success Stories", href: "#" },
+        { title: "Pricing", href: "#" },
+        { title: "Contact", href: "#" }
+    ]
+
     const [hambMenu, setHambMenu] = useState(false)
 
     const clickHambMenu = () => {
-        setHambMenu(!hambMenu)
+        setHambMenu(prev => !prev)
     }
 
     return (
         <>
-            <NavWrapper>
-                <MenuItem href="#">Home</MenuItem>
-                <MenuItem href="#">How It Works</MenuItem>
-                <MenuItem href="#">Courses</MenuItem>
-                <MenuItem href="#">Success Stories</MenuItem>
-                <MenuItem href="#">Pricing</MenuItem>
-                <MenuItem href="#">Contact</MenuItem>
+            <DektopMenu>
+                {MenuItems.map((value, index) => (
+                    <MenuItem key={index} href={value.href}>{value.title}</MenuItem>
+                ))}
                 <SignIn to="#">Sign In</SignIn>
-            </NavWrapper>
-            <HamburgerButton>
+            </DektopMenu>
+            <HamburgerButton
+                onClick={clickHambMenu}
+            >
                 <FaBars />
             </HamburgerButton>
+            <MobileMenu hambMenu={hambMenu}>
+                {MenuItems.map((value, index) => (
+                    <MenuItem key={index} href={value.href}>{value.title}</MenuItem>
+                ))}
+                <SignIn to="#">Sign In</SignIn>
+            </MobileMenu>
         </>
     )
 }
