@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { SIZES } from "../../../../design/tokens/Sizes";
 
 const DektopMenu = styled.nav`
-    display: ${({ hambMenu }) => hambMenu ? "flex" : "none"};
+    display: ${({ $hambMenu }) => $hambMenu ? "flex" : "none"};
     display: flex;
     justify-content: space-between;
     align-items: center;

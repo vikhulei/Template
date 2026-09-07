@@ -32,7 +32,7 @@ function Nav() {
             >
                 <FaBars />
             </HamburgerButton>
-            <MobileMenu hambMenu={hambMenu}>
+            <MobileMenu $hambMenu={hambMenu}>
                 {MenuItems.map((value, index) => (
                     <MenuItem key={index} href={value.href}>{value.title}</MenuItem>
                 ))}
