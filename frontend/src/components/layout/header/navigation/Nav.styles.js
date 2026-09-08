@@ -32,16 +32,20 @@ const HamburgerButton = styled.button`
         display: block;
     }
 `
+
 const MobileMenu = styled.div`
     position: absolute;
     width: 220px;
     top: 100px;
     right: 0;
-    display: ${({ hambMenu }) => hambMenu ? "flex" : "none"};
+    display: ${({ $hambMenu }) => $hambMenu ? "flex" : "none"};
     flex-direction: column;
     gap: 12px;
     padding: 20px;
     background-color: black;
+    @media(min-width: ${SIZES.bp.tablet}) {
+        display: none;
+    }
 `
 
 export { DektopMenu, MenuItem, SignIn, HamburgerButton, MobileMenu }
