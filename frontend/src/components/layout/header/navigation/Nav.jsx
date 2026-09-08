@@ -19,6 +19,10 @@ function Nav() {
         setHambMenu(prev => !prev)
     }
 
+    const clickMobileMenuItem = () => {
+        setHambMenu(false)
+    }
+
     return (
         <>
             <DektopMenu>
@@ -34,7 +38,13 @@ function Nav() {
             </HamburgerButton>
             <MobileMenu $hambMenu={hambMenu}>
                 {MenuItems.map((value, index) => (
-                    <MenuItem key={index} href={value.href}>{value.title}</MenuItem>
+                    <MenuItem
+                     key={index}
+                     href={value.href}
+                     onClick={clickMobileMenuItem}
+                     >
+                        {value.title}
+                    </MenuItem>
                 ))}
                 <SignIn to="#">Sign In</SignIn>
             </MobileMenu>
