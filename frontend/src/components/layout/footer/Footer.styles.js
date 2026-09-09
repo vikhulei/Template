@@ -8,7 +8,7 @@ const FooterOuter = styled(Section)`
 
 const FooterInner = styled(Container)`
     display: grid;
-    grid-template-column: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 40px;
 `
 
@@ -17,11 +17,11 @@ const FooterColumn = styled.div`
 `
 
 const FooterHeader = styled.div`
-
+    color: white;
 `
 
 const FooterLink = styled.a`
-
+    color: white;
 `
 
 const SocialRow = styled.div`
