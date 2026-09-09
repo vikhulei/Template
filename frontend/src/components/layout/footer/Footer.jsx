@@ -4,7 +4,7 @@ import { FooterOuter, FooterInner, FooterColumn, FooterHeader, FooterLink, Socia
 function Footer() {
 
     const FooterContent = [
-        {heading: "LinquaPro", text1: "About Us", href2: "#", text2: "Courses", href3: "#", text3: "How It Works", href4: "#", text4: "Pricing", href5: "#", text5: "Contact", href1: "#",},
+        {heading: "LinquaPro", text1: "About Us", href2: "#", text2: "Courses", href3: "#", text3: "How It Works", href4: "#",},
         {heading: "Quick Links", text1: "About Us2", href2: "#", text2: "Courses", href3: "#", text3: "How It Works", href4: "#", text4: "Pricing", href5: "#", text5: "Contact", href1: "#",},
         {heading: "Resources", text1: "About Us3", href2: "#", text2: "Courses", href3: "#", text3: "How It Works", href4: "#", text4: "Pricing", href5: "#", text5: "Contact", href1: "#",},
         {heading: "Support", text1: "About Us4", href2: "#", text2: "Courses", href3: "#", text3: "How It Works", href4: "#", text4: "Pricing", href5: "#", text5: "Contact", href1: "#",},

@@ -8,12 +8,16 @@ const FooterOuter = styled(Section)`
 
 const FooterInner = styled(Container)`
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 40px;
+    grid-template-columns: repeat(5, auto);
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px;
 `
 
 const FooterColumn = styled.div`
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 `
 
 const FooterHeader = styled.div`
