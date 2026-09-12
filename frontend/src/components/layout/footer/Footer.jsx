@@ -1,4 +1,4 @@
-import { FooterOuter, FooterInner, FooterTop, FooterColumn, FooterHeader, FooterLink, SocialRow, FooterBottom } from "./Footer.styles"
+import { FooterOuter, FooterInner, FooterTop, FooterColumn, FooterHeader, FooterLink, SocialRow, FooterBottom, FooterBottomText } from "./Footer.styles"
 import {
     FaFacebookF,
     FaTwitter,
@@ -14,8 +14,8 @@ function Footer() {
     const FooterContent = [
         { heading: "LinquaPro", text1: "We help people around the world learn English and build a better future through education", },
         { heading: "Resources", text1: "About Us2", href1: "#", text2: "Google", href2: "https://www.google.com", target2: "_blank", href3: "#", text4: "Pricing", href4: "#", text5: "Contact", href5: "#", },
-        { heading: "Support", text1: "About Us2", href1: "#", text2: "Courses", href2: "#", text3: "How It Works", href3: "#", text4: "Pricing", href4: "#", text5: "Contact", href5: "#", },
-        { heading: "Contact us", text1: "About Us2", href1: "#", text2: "Courses", href2: "#", text3: "How It Works", href3: "#", text4: "Pricing", href4: "#", text5: "00000000", },
+        { heading: "Support", text1: "About Us3", href1: "#", text2: "Courses", href2: "#", text3: "How It Works", href3: "#", text4: "Pricing", href4: "#", text5: "Contact", href5: "#", },
+        { heading: "Contact us", text1: "About Us4", href1: "#", text2: "Courses", href2: "#", text3: "How It Works", href3: "#", text4: "Pricing", href4: "#", text5: "00000000", },
     ]
 
     const SocialIcons = [
@@ -52,7 +52,10 @@ function Footer() {
                     ))}
                 </FooterTop>
                 <FooterBottom>
-                    Bottom lines will be placed here
+                    <FooterBottomText>                    © 2024 LinguaPro. All rights reserved.
+                    </FooterBottomText>
+                    <FooterBottomText>                    Made with ❤️ for learners worldwide
+                    </FooterBottomText>
                 </FooterBottom>
             </FooterInner>
         </FooterOuter>
