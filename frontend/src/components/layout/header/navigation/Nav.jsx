@@ -5,12 +5,12 @@ import { FaBars } from "react-icons/fa"
 function Nav() {
 
     const MenuItems = [
-        { title: "Home", href: "#" },
-        { title: "How It Works", href: "#" },
-        { title: "Courses", href: "#" },
-        { title: "Success Stories", href: "#" },
-        { title: "Pricing", href: "#" },
-        { title: "Contact", href: "#" }
+        { title: "Home", href: "/" },
+        { title: "How It Works", href: "/" },
+        { title: "Courses", href: "/" },
+        { title: "Success Stories", href: "/" },
+        { title: "Pricing", href: "/" },
+        { title: "Contact", href: "/" }
     ]
 
     const [hambMenu, setHambMenu] = useState(false)
@@ -29,7 +29,7 @@ function Nav() {
                 {MenuItems.map((value, index) => (
                     <MenuItem key={index} href={value.href}>{value.title}</MenuItem>
                 ))}
-                <SignIn to="#">Sign In</SignIn>
+                <SignIn to="/admin">Sign In</SignIn>
             </DektopMenu>
             <HamburgerButton
                 onClick={clickHambMenu}
@@ -39,14 +39,19 @@ function Nav() {
             <MobileMenu $hambMenu={hambMenu}>
                 {MenuItems.map((value, index) => (
                     <MenuItem
-                     key={index}
-                     href={value.href}
-                     onClick={clickMobileMenuItem}
-                     >
+                        key={index}
+                        href={value.href}
+                        onClick={clickMobileMenuItem}
+                    >
                         {value.title}
                     </MenuItem>
                 ))}
-                <SignIn to="#">Sign In</SignIn>
+                <SignIn
+                    to="/admin"
+                    onClick={clickMobileMenuItem}
+                >
+                    Sign In
+                </SignIn>
             </MobileMenu>
         </>
     )

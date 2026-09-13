@@ -3,6 +3,7 @@ import GlobalStyles from "./design/global/GlobalStyles";
 import Header from "./components/layout/header/Header";
 import Footer from "./components/layout/footer/Footer";
 import Home from "./pages/home/Home";
+import AdminPortal from "./pages/adminPortal/AdminPortal";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>} />
+        <Route path="/admin" element={<AdminPortal />} />
       </Routes>
       <Footer />
     </Router>
