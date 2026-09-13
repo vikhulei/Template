@@ -24,7 +24,6 @@ const FooterColumn = styled.div`
     }
 `
 
-
 const FooterTop = styled.div`
     margin: auto;
     width: 100%;
@@ -32,20 +31,20 @@ const FooterTop = styled.div`
     grid-template-columns: repeat(4, auto);
     justify-content: space-between;
     align-items: start;
-    gap: 100px;
+    gap: 50px;
     @media(max-width: ${SIZES.bp.tablet}) {
         grid-template-columns: repeat(2, auto);
+        padding: 0 100px;
     }
     @media(max-width: ${SIZES.bp.mobile}) {
         grid-template-columns: repeat(1, auto);
         justify-content: center;
     }
-
 `
-
 
 const FooterHeader = styled.div`
     font-size: 1.2rem;
+    font-weight: 600;
     color: white;
     margin-bottom: 10px;
 `
@@ -54,6 +53,7 @@ const FooterLink = styled.a`
     font-size: 0.85rem;
     color: white;
     line-height: 1.5;
+    margin-bottom: 4px;
 `
 
 const SocialRow = styled.div`
@@ -70,11 +70,18 @@ const FooterBottom = styled.div`
     justify-content: space-between;
     border-top: 2px solid gray;
     flex-wrap: wrap;
+    gap: 50px;
+    @media(max-width: ${SIZES.bp.mobile}) {
+        max-width: 400px;
+        gap: 10px;
+        justify-content: center;
+    }
 `
 
 const FooterBottomText = styled.div`
     color: white;
     font-size: 0.9rem;
+    line-height: 1.5;
 `
 
 export { FooterOuter, FooterInner, FooterTop, FooterColumn, FooterHeader, FooterLink, SocialRow, FooterBottom, FooterBottomText }
