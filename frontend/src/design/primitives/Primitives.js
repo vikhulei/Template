@@ -3,7 +3,7 @@ import { SIZES } from "../tokens/Sizes";
 
 const Section = styled.div`
     width: 100%;
-    padding: 0 20px;
+    padding: 0 50px;
 `
 
 const Container = styled.div`

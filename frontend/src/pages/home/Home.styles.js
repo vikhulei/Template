@@ -3,12 +3,11 @@ import { Container, Section } from "../../design/primitives/Primitives";
 
 const HomeOuter = styled(Section)`
     height: 100vh;
-    background-color: darkblue;
 `
 
 const HomeInner = styled(Container)`
     height: 100%;
-    background-color: lightblue;
+    background-color: lightgrey;
     display: flex;
     justify-content: center;
     font-weight: bold;
