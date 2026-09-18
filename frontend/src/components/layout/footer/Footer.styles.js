@@ -31,7 +31,7 @@ const FooterTop = styled.div`
     grid-template-columns: repeat(4, auto);
     justify-content: space-between;
     align-items: start;
-    gap: 50px;
+    gap: 30px;
     @media(max-width: ${SIZES.bp.tablet}) {
         grid-template-columns: repeat(2, auto);
         padding: 0 100px;
@@ -43,16 +43,16 @@ const FooterTop = styled.div`
 `
 
 const FooterHeader = styled.div`
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     color: white;
     margin-bottom: 10px;
 `
 
 const FooterLink = styled.a`
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     color: white;
-    line-height: 1.5;
+    line-height: 1.3;
     margin-bottom: 4px;
 `
 
