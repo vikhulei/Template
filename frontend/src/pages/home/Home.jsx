@@ -1,12 +1,10 @@
-import { HomeOuter, HomeInner } from "./Home.styles"
+import Hero from "./sections/01_hero/Hero"
 
 function Home() {
   return (
-    <HomeOuter>
-        <HomeInner>
-            Home
-        </HomeInner>
-    </HomeOuter>
+    <>
+      <Hero />
+    </>
   )
 }
 

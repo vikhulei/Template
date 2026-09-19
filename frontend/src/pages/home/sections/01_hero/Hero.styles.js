@@ -29,7 +29,15 @@ const HeroActions = styled.div`
 
 `
 
-const SocialProof = styled.div`
+const ActionsIcon = styled.div`
+
+`
+
+const ActionsText = styled.div`
+
+`
+
+const SocialProof = styled.img`
 
 `
 
@@ -37,12 +45,12 @@ const HeroVisual = styled.div`
 
 `
 
-const HeroImage = styled.div`
+const HeroImage = styled.img`
 
 `
 
-const CourseProgress = styled.div`
+const CourseProgress = styled.img`
 
 `
 
-export {  }
+export { HeroOuter, HeroInner, HeroContent, Eyebrow, HeroTitle, HeroDescription, HeroActions, ActionsIcon, ActionsText, SocialProof, HeroVisual, HeroImage, CourseProgress }
