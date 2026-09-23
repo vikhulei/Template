@@ -15,10 +15,12 @@ const DektopMenu = styled.nav`
 
 const MenuItem = styled.a`
     color: white;
+    color: green;
 `
-
-const SignIn = styled(Link)`
+    
+    const SignIn = styled(Link)`
     color: white;
+    color: green;
 `
 
 const HamburgerButton = styled.button`
