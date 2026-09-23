@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import {Section, Container} from "../../../design/primitives/Primitives"
+import { COLORS } from "../../../design/tokens/Colors"
 import { Link } from "react-router-dom";
 
 const HeaderOuter = styled(Section)`
-    background-color: black;
+    background-color: ${COLORS.black};
     height: 100px;
 `
 const HeaderInner = styled(Container)`

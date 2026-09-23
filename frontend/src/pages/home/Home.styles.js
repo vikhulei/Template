@@ -1,7 +1,10 @@
 import styled from "styled-components";
 import { Container, Section } from "../../design/primitives/Primitives";
+import { COLORS } from "../../../../design/tokens/Colors";
 
 const HomeOuter = styled(Section)`
+    background-color: ${COLORS.black};
+    background-color: black;
     height: 100vh;
 `
 

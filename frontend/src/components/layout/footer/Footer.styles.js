@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { Container, Section } from "../../../design/primitives/Primitives";
 import { SIZES } from "../../../design/tokens/Sizes";
+import { COLORS } from "../../../design/tokens/Colors"
 
 const FooterOuter = styled(Section)`
-    background-color: black;
+    background-color: ${COLORS.black};
 `
 
 const FooterInner = styled(Container)`
