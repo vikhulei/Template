@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Container, Section } from "../../../../design/primitives/Primitives";
 import { COLORS } from "../../../../design/tokens/Colors";
 import { SIZES } from "../../../../design/tokens/Sizes";
+import { Eyebrow } from "../../../../design/textstyles/TextStyles";
 
 
 const HeroOuter = styled(Section)`
@@ -29,10 +30,10 @@ const HeroContent = styled.div`
     }
 `
 
-const Eyebrow = styled.div`
-    color: ${COLORS.primary};
-    font-weight: bold;
-    font-size: 0.8rem;
+const HeroEyebrow = styled(Eyebrow)`
+    // color: ${COLORS.primary};
+    // font-weight: bold;
+    // font-size: 0.8rem;
 `
 
 const HeroTitle = styled.div`
@@ -89,4 +90,4 @@ const CourseProgress = styled.img`
     width: 50%;
 `
 
-export { HeroOuter, HeroInner, HeroContent, Eyebrow, HeroTitle, HeroTitleHighlight, HeroDescription, HeroActions, ActionsIcon, ActionsText, SocialProof, HeroVisual, HeroImage, CourseProgress }
+export { HeroOuter, HeroInner, HeroContent, HeroEyebrow, HeroTitle, HeroTitleHighlight, HeroDescription, HeroActions, ActionsIcon, ActionsText, SocialProof, HeroVisual, HeroImage, CourseProgress }
