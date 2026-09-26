@@ -2,6 +2,8 @@ import { HeroOuter, HeroInner, HeroContent, Eyebrow, HeroTitle, HeroTitleHighlig
 import MainButton from "../../../../components/ui/button/MainButton"
 import circle from "./Circle.png"
 import social from "./social.png"
+import heroimg from "./heroimg.png"
+import progress from "./progress.png"
 
 function Hero() {
   return (
@@ -21,8 +23,8 @@ function Hero() {
           <SocialProof src={social} />
         </HeroContent>
         <HeroVisual>
-          <HeroImage src="#" />
-          <CourseProgress src="#" />
+          <HeroImage src={heroimg} />
+          <CourseProgress src={progress} />
         </HeroVisual>
       </HeroInner>
     </HeroOuter>
