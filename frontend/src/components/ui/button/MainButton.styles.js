@@ -8,6 +8,10 @@ const Button = styled.button`
     background-color: ${COLORS.primary};
     font-size: 0.7rem;
     font-weight: bold;
+    cursor: pointer;
+    &:active {
+        transform: translate(1px, 1px);
+    }
 `
 
 export { Button }

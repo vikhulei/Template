@@ -59,6 +59,9 @@ const HeroActions = styled.div`
 
 const ActionsIcon = styled.img`
     height: 50px;
+    &:active {
+        transform: translate(1px, 1px)
+    }
 `
 
 const ActionsText = styled.div`

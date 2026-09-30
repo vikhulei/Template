@@ -1,9 +1,9 @@
 import { HeroOuter, HeroInner, HeroContent, HeroEyebrow, HeroTitle, HeroTitleHighlight, HeroDescription, HeroActions, ActionsIcon, ActionsText, SocialProof, HeroVisual, HeroImage, CourseProgress } from "./Hero.styles"
 import MainButton from "../../../../components/ui/button/MainButton"
-import circle from "./Circle.png"
-import social from "./social.png"
-import heroimg from "./heroimg.png"
-import progress from "./progress.png"
+import circle from "./assets/Circle.png"
+import social from "./assets/social.png"
+import heroimg from "./assets/heroimg.png"
+import progress from "./assets/progress.png"
 
 function Hero() {
   return (
