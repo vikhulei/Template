@@ -48,17 +48,23 @@ const BenefitsTitle = styled(SectionTitle)`
 const BenefitsGrid = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     column-gap: 50px;
     row-gap: 40px;
+    @media(max-width: ${SIZES.bp.mobile}) {
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 const BenefitItem = styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
     gap: 18px;
+    @media(max-width: ${SIZES.bp.mobile}) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 `
 
 const BenefitIcon = styled.img`
@@ -91,6 +97,10 @@ const StatsGrid = styled.div`
     @media(max-width: ${SIZES.bp.tablet}) {
         width: 100%;
     }
+    @media(max-width: ${SIZES.bp.mobile}) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
 `
 
 const StatItem = styled.div`
