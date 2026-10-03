@@ -1,10 +1,10 @@
 import { TrustedByOuter, TrustedByInner, TrustedByTitle, LogoList, LogoImage } from "./TrustedBy.styles"
-import google from "./google.png"
-import microsoft from "./microsoft.png"
-import airbnb from "./airbnb.png"
-import amazon from "./amazon.png"
-import spotify from "./spotify.png"
-import udemy from "./udemy.png"
+import google from "./images/google.png"
+import microsoft from "./images/microsoft.png"
+import airbnb from "./images/airbnb.png"
+import amazon from "./images/amazon.png"
+import spotify from "./images/spotify.png"
+import udemy from "./images/udemy.png"
 
 
 const Images = [

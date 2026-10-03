@@ -22,13 +22,14 @@ const TrustedByTitle = styled.div`
 const LogoList = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 5vw;
+    flex-wrap: wrap;
     width: 100%;
-    // background-color: green;
 `
 
 const LogoImage = styled.img`
-
+    height: 28px;
 `
 
 export { TrustedByOuter, TrustedByInner, TrustedByTitle, LogoList, LogoImage }
