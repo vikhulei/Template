@@ -1,46 +1,46 @@
 import styled from "styled-components";
-import { TYPOGRAPHY } from "../tokens/Typography";
 import { COLORS } from "../tokens/Colors";
 
+
 export const Eyebrow = styled.div`
-  font-size: ${TYPOGRAPHY.size.xs};
-  font-weight: ${TYPOGRAPHY.weight.bold};
-  color: ${COLORS.primary};
-  text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    color: ${COLORS.primary};
+    text-transform: uppercase;
 `;
 
 export const HeroTitle = styled.h1`
-  font-size: ${TYPOGRAPHY.size.display};
-  font-weight: ${TYPOGRAPHY.weight.bold};
-  line-height: ${TYPOGRAPHY.line.tight};
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.1;
 `;
 
 export const SectionTitle = styled.h2`
-  font-size: ${TYPOGRAPHY.size.xxl};
-  font-weight: ${TYPOGRAPHY.weight.bold};
-  line-height: ${TYPOGRAPHY.line.tight};
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.2;
 `;
 
 export const Subheading = styled.h3`
-  font-size: ${TYPOGRAPHY.size.lg};
-  font-weight: ${TYPOGRAPHY.weight.semibold};
-  line-height: ${TYPOGRAPHY.line.tight};
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2;
 `;
 
 export const BodyText = styled.p`
-  font-size: ${TYPOGRAPHY.size.md};
-  font-weight: ${TYPOGRAPHY.weight.regular};
-  line-height: ${TYPOGRAPHY.line.normal};
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 `;
 
 export const SmallText = styled.p`
-  font-size: ${TYPOGRAPHY.size.sm};
-  font-weight: ${TYPOGRAPHY.weight.regular};
-  line-height: ${TYPOGRAPHY.line.normal};
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
 `;
 
 export const Caption = styled.span`
-  font-size: ${TYPOGRAPHY.size.xs};
-  font-weight: ${TYPOGRAPHY.weight.regular};
-  line-height: ${TYPOGRAPHY.line.normal};
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
 `;
