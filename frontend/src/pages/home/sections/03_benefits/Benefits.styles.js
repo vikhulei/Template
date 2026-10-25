@@ -120,6 +120,11 @@ const StatItem = styled.div`
     &:nth-child(2),
     &:nth-child(4) {
         border-left: 1px solid #e5e7eb;
+    };
+    @media(max-width: ${SIZES.bp.mobile}) {
+        && {
+            border: none;
+        }
     }
 `
 
