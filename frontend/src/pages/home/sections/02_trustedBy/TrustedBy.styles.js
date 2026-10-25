@@ -16,7 +16,8 @@ const TrustedByTitle = styled.div`
     font-size: 0.8rem;
     font-weight: bold;
     letter-spacing: 2px;
-    color: ${COLORS.textMuted}
+    color: ${COLORS.textMuted};
+    text-align: center;
 `
 
 const LogoList = styled.div`
