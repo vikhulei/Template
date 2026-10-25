@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-import { Container, Section } from "../../../../design/primitives/Primitives"
-import { Eyebrow, SectionTitle, BodyText } from "../../../../design/textstyles/TextStyles"
+import { Container, IconStack, Section, Stack } from "../../../../design/primitives/Primitives"
+import { Eyebrow, SectionTitle, BodyText, ContentText, ContentTitle } from "../../../../design/textstyles/TextStyles"
 import { SIZES } from "../../../../design/tokens/Sizes"
 
 
@@ -14,7 +14,7 @@ const BenefitsInner = styled(Container)`
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    gap: 10px;
     @media(max-width:${SIZES.bp.tablet}) {
         flex-direction: column;
         align-items: stretch;
@@ -22,7 +22,7 @@ const BenefitsInner = styled(Container)`
     }
 `
 
-const BenefitsContent = styled.div`
+const BenefitsContent = styled(Stack)`
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -32,14 +32,12 @@ const BenefitsContent = styled.div`
 `
 
 const BenefitsEyebrow = styled(Eyebrow)`
-    margin-bottom: 16px;
     @media(max-width: ${SIZES.bp.tablet}) {
         text-align: center;
     }
 `
 
 const BenefitsTitle = styled(SectionTitle)`
-    margin-bottom: 40px;
     @media(max-width: ${SIZES.bp.tablet}) {
         text-align: center;
     }
@@ -55,16 +53,8 @@ const BenefitsGrid = styled.div`
     }
 `
 
-const BenefitItem = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 18px;
-    @media(max-width: ${SIZES.bp.mobile}) {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+const BenefitItem = styled(IconStack)`
+
 `
 
 const BenefitIcon = styled.img`
@@ -77,16 +67,14 @@ const BenefitIcon = styled.img`
 const BenefitContent = styled.div`
     display: flex;
     flex-direction: column;
-
     gap: 8px;
 `
 
-const BenefitTitle = styled.div`
-    font-size: 1rem;
-    font-weight: 600;
+const BenefitTitle = styled(ContentTitle)`
+
 `
 
-const BenefitText = styled(BodyText)`
+const BenefitText = styled(ContentText)`
 
 `
 

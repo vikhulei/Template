@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { SIZES } from "../tokens/Sizes";
 
-const Section = styled.div`
+export const Section = styled.div`
     width: 100%;
     padding: 0 50px;
 `
 
-const Container = styled.div`
+export const Container = styled.div`
     width: 100%;
     height:100%;
     max-width: 1400px;
@@ -17,13 +17,28 @@ const Container = styled.div`
     align-items: center;
 `;
 
-const Stack = styled.div`
+export const Stack = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: ${({$direction}) => $direction || "column"};
-    gap: ${({$gap}) => $gap || "0"};
-    align-items: ${({$align}) => $align || "stretch"};
-    justify-content: ${({$justify}) => $justify || "flex-start"};
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
 `
 
-export {Section, Container, Stack};
+export const IconStack = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 18px;
+    @media(max-width: ${SIZES.bp.mobile}) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+`;
+
+export const ContentStack = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+`;

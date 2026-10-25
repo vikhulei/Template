@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 import { Container, Section } from "../../../../design/primitives/Primitives"
-import { Eyebrow, SectionTitle, BodyText, Caption, Subheading } from "../../../../design/textstyles/TextStyles"
+import { Eyebrow, SectionTitle, BodyText, Caption, ContentTitle, ContentText } from "../../../../design/textstyles/TextStyles"
 
 
 const CoursesOuter = styled(Section)`
@@ -31,11 +31,11 @@ const CourseIcon = styled.img`
 
 `
 
-const CourseTitle = styled(Subheading)`
+const CourseTitle = styled(ContentTitle)`
 
 `
 
-const CourseText = styled(BodyText)`
+const CourseText = styled(ContentText)`
 
 `
 

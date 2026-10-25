@@ -7,6 +7,7 @@ export const Eyebrow = styled.div`
     font-weight: 700;
     color: ${COLORS.primary};
     text-transform: uppercase;
+    margin-bottom: 16px;
 `;
 
 export const HeroTitle = styled.h1`
@@ -19,12 +20,18 @@ export const SectionTitle = styled.h2`
     font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
+    margin-bottom: 40px;
 `;
 
-export const Subheading = styled.h3`
-    font-size: 18px;
+export const ContentTitle = styled.h3`
+    font-size: 1rem;
     font-weight: 600;
-    line-height: 1.2;
+`;
+
+export const ContentText = styled.p`
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
 `;
 
 export const BodyText = styled.p`
